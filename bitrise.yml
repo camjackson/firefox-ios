@@ -47,7 +47,6 @@ workflows:
             xcodebuild "-project" "/Users/vagrant/git/Client.xcodeproj" "-scheme" "Fennec_Enterprise_XCUITests" "-configuration" "Fennec" "CODE_SIGNING_ALLOWED=NO" "-destination" "id=A48E6C50-5C88-4C57-BDA6-D7312B605E0D" "COMPILER_INDEX_STORE_ENABLE=NO" "build" "CODE_SIGN_IDENTITY=" "CODE_SIGNING_REQUIRED=NO" "CODE_SIGNING_ALLOWED=NO"     
             echo "show files"
             ls DerivedData/
-            ls DerivedData/Build/Products
     - script@1.1:
         title: Compress Derived Data
         is_always_run: true
